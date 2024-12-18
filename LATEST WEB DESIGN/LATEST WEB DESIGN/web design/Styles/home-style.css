@@ -1,0 +1,289 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#home, #intro{
+  height: calc(var(--viewport-height,100vh) - 100px); /* Adjust based on your taskbar's height*/
+}
+body{
+  display: flex;
+}
+/* Slideshow container */
+.slideshow-container {
+  position: flex;
+  margin: auto;
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img{
+  width: 100%;
+  height: 87.3vh;
+  object-fit: cover;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+p{
+  position:flex;
+  left: 120px;
+  width: 450px;
+  text-align: center;
+  font-size: 4vw;
+  color:#e2e2e2;
+}
+p1{
+  position:flex;
+  left: 190px;
+  width: 450px;
+  text-align: center;
+  font-size:4vw;
+  color:#e2e2e2;
+}
+p2{
+  position:flex;
+  left: 115px;
+  width: 450px;
+  text-align: center;
+  font-size:4vw;
+  color:#e2e2e2;
+}
+p3{
+  text-align: center;
+  width: 100%;
+  font-size:25px;
+  color:#c5c0b0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.title-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  height: 100%;
+}
+/* Caption text */
+.text {
+  left: 65px;
+  top:50%;
+  width: 400px;
+  text-align: center;
+  font-size:3vh;
+  color:#e2e2e2;
+  margin-top: 15px;
+
+}
+.overlay{
+  background-color: rgba(0,0,0,.5);
+  top: 0%;
+  width:43%;
+  height: 87.3vh;
+  position: absolute;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.description{background-color: #212121;
+  position: flex;
+  width: 100%;
+  height: 100px;
+  padding-top: 20px;
+  text-align: center;
+  z-index: 2;
+}
+
+/* Flexbox for #intro container */
+#intro {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px 0;
+  margin-bottom: 120px;
+}
+
+/* Centering the title */
+.intro-title {
+  display: flex;
+  justify-content: center;
+  color: #556d34;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.intro-title h2 {
+  margin: 0;
+}
+
+/* Adjusting the image-item container for flexbox */
+.image-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.single-image-item {
+  flex-direction: column;
+}
+
+.single-image-item img {
+  width: 220px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.impacts {
+  padding-top: 15px;
+  font-size: 20px;
+  color: #1e1919;
+  text-align: center;
+}
+
+/* Adjusting the content-container for flexbox */
+.content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 150px;
+}
+
+.container1-img {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  padding-top: 35px;
+  margin-bottom: 20px;
+}
+
+.container1-quotes {
+  color: #425626;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 35px;
+}
+
+.container2-content {
+  color: #5a574e;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 600px; 
+}
+
+
+ @media screen and (max-width: 1000px) {
+  #intro, .description, .content-container{
+      flex: 1 1 100%;
+      flex-direction: column;
+      max-width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .description{
+      padding: 20px 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .text, p,p1{
+      max-width: 45%;
+      text-align: center;
+  }
+}
+@media screen and (max-width: 1000px) {
+  p2{
+      max-width: 30%;
+      text-align: center;
+  }
+}
+.fa {
+  width: 35px; 
+  height: 35px;
+}
+.footer-section.newsletter {
+  height: 150px;
+  width: 295px;
+}
+.formStyle { 
+  height: 28px;
+  width: 215px;
+}
+

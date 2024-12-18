@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal 13 : Climate Action</title>
+    <link rel="stylesheet" href="Styles/general-style.css">
+    <link rel="stylesheet" href="Styles/donation-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="home.html#intro">Introduction</a></li>
+            <li><a href="target.html">Targets</a></li>
+            <li><a href="action.html">Actions</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="donation.html">Donation</a></li>
+        </ul>
+    </nav>
+    <section id="donation">
+    <div class="definition">
+        <img src="https://globalgoalscms.co.uk/wp-content/uploads/2021/09/Goal-13-B.jpg" class="definition-img1">
+        <div class="overlay">
+            <div class="text">
+                <div class="title">
+                    <p class="t1">Goal 13</p>
+                    <p class="t2">Climate Action by making a donation</p>
+                </div>
+                <p>Your contribution will help us take urgent action to combat climate change and its impacts.</p>
+                <p>Together, we can work towards a more sustainable future.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="donation-form">
+
+        <h2>Donation Form</h2>
+        <form id="donation-form">
+            <label>Full Name (per NRIC/Passport):</label>
+            <input type="text" id="name" placeholder="Name" required>
+
+            <label>Email:</label>
+            <input type="email" id="email" placeholder="example@gmail.com" autocomplete="off" required="required">
+
+            <label>Contact:</label>
+            <input type="tel" id="contact" name="contact" placeholder="Ex: 0121234567" required>
+
+            <label>Donation Amount: </label>
+            <input type="number" id="amount" placeholder="Amount (RM)" required>
+
+            <label>Payment Type: </label>
+            <div class="radio"><input type="radio" id="ewallet" name="payment-method" value="ewallet"
+                    checked="checked"><span>E-wallet</span><img
+                    src="https://support.sitegiant.com/wp-content/uploads/2022/11/e-wallet-add-payment-1.png"
+                    class="ewallet-img"></div>
+            <div class="radio"><input type="radio" id="banking" name="payment-method"
+                    value="banking"><span>Banking</span><img
+                    src="https://i0.wp.com/dividendmagic.com.my/wp-content/uploads/2020/12/Premier-Banking.png?resize=720%2C400&ssl=1"
+                    class="banking-img"></div>
+
+            <button type="submit" id="donate-btn"><span>Submit</span></button>
+        </form>
+
+        <div id="confirmation-message" class="hidden">Thank you for your donation !</div>
+        <script src="donation.js"></script>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <img class="footer-image" src="https://globalgoalscms.co.uk/wp-content/uploads/2021/09/13.png">
+            </div>
+            <div class="footer-section about">
+                <div class="words">
+                <h2>About Us</h2>We are a team dedicated to leading the fight against climate change. Our mission is to create sustainable solutions that help protect our planet for future generations. We believe that every action, no matter how small, can make a significant impact when it comes to preserving our environment.
+            </div>
+        </div>
+        <div class="vl"></div>
+        <div class="footer-container">
+            <div class="footer-section contact">
+                <div class="vertical-text">
+                    <h2>CONTACT</h2>
+                </div>
+            </div>
+            <div class="icon-container">
+                    <a href="https://m.facebook.com/theglobalgoals/" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/theglobalgoals?igsh=MTZ2ZjRreXh3dm5nag==" class="fa fa-instagram"></a>
+                    <a href="https://x.com/TheGlobalGoals?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a>
+            </div>  
+            <div class="contact-details">
+                The&nbsp;Global&nbsp;Goals<br>@theglobalgoals<br>@TheGlobalGoals
+            </div>
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-section newsletter">
+                <div class="newsletter-heading">
+                    Newsletter Subscription
+                </div>
+                <div>
+                    <form action="">
+                        <input type="email" name="email" class="formStyle" placeholder="Email (required)" required />
+                        <a class="formButton">Subscribe</a>
+                    </form>
+                </div>
+            </div>   
+        </div>
+    </footer>
+    <div class="footer-copyright">
+        &copy; 2024 The Global Goals | Climate Action. All rights reserved. Designed and developed with&nbsp;<span class="heart">&#9829;</span>
+    </div>    
+
+</body>
+
+</html>
